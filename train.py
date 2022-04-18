@@ -132,7 +132,7 @@ def run(args):
         trainer.val_loss.reset_states()
         trainer.val_mae.reset_states()
          
-        if (epoch+1) % 50 == 0:
+        if (epoch+1) % 20 == 0:
             if args.variable_lr:
                 current_lr*=1e-1
                 trainer.optimizer.lr=current_lr
