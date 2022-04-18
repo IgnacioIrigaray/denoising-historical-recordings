@@ -137,7 +137,7 @@ def run(args):
                 current_lr*=1e-1
                 trainer.optimizer.lr=current_lr
             try: 
-                unet_model.save_weights(checkpoint_filpath)
+                unet_model.save_weights(checkpoint_filepath)
             except:
                 pass
 
